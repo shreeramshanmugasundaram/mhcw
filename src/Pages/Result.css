@@ -1,0 +1,56 @@
+.college__card {
+  width: min(72rem, 98%);
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  box-shadow: rgba(30, 30, 30, 0.15) 0px 2px 11px 0px;
+}
+.college__card__top {
+  background-color: #fff;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 0.1fr 0.15fr auto 0.1fr;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px dotted rgba(30, 30, 30, 0.3);
+  padding: 32px 32px 16px 32px;
+}
+.college__card__top > * {
+  margin: 0px 0.2rem;
+}
+.college__card__bottom {
+  background-color: #f5f7fc;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.college__card__bottom > a,
+.college__card__bottom > div {
+  font-size: 14px;
+  padding: 12px 24px;
+  margin: 0.25rem 1rem;
+  border-radius: 12px;
+}
+.college__card__btn {
+  color: #324dc7;
+}
+@media only screen and (max-width: 880px) {
+  .college__card__bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+  .college__card__bottom > a,
+  .college__card__bottom > div {
+    font-size: 14px;
+    padding: 4px 24px;
+  }
+  .college__card__top {
+    grid-template-columns: 0.15fr auto 0.1fr;
+    padding: 12px 12px 16px 12px;
+  }
+  .college__card__top > * {
+    margin: 0px 0.5rem;
+    font-size: 14px;
+  }
+  .rank {
+    display: none;
+  }
+}
